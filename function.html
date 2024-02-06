@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const hummus = function (factor) {
+            const ingredient = function (amount, unit, name) {
+                let ingredientAmount = amount * factor;
+                if (ingredientAmount < 1) {
+                    unit += "s";
+                }
+                console.log(`${ingredientAmount} ${unit} ${name}`);
+            };
+            ingredient(1, "can", "chickpeas"); 
+            ingredient(0.25, "cup", "tahini");
+            ingredient(0.25, "cup", "lemon juice"); 
+            ingredient(1, "clove", "garlic"); 
+            ingredient(2, "tablespoon", "olive oil"); 
+            ingredient(0.5, "teaspoon", "cumin");
+        }
+
+        hummus(12);
+        /* 
+                let n = 10;
+                let test = function (n) {
+                    return n / 3;
+                }
+                console.log(test(20));
+                console.log(n); */
+
+        /*
+            let x = 10;
+        
+            if(true) {
+                let y = 20;
+                var z = 30;
+            }
+            console.log(x + y); */
+
+
+        /*
+                let elevar = function (base, expoente) {
+                    let cumulativo = 1;
+                    for (let x = 1; x <= expoente; x++){
+                        cumulativo *= base;
+                    }
+                    return cumulativo;
+                }
+                console.log(elevar(2,10)) */
+
+        /* eu precisava multiplicar a base tantas vezes quanto o expoente pedia, por isso o expoente deve
+        ser o definidor do limite do loop, pois tantas vezes quanto o expoente representa, esse valor é 
+        a quantidade de vezes que a base deve multiplicar a si mesma.
+        se eu utilizar a base como valor cumulativo, ela se multiplicara, o que não deve acontecer aqui., 
+        por isso a criação de uma nova variável para manter o valor da base. */
+
+        /*
+                let makeNoise = function() {
+                    console.log("hahaha");
+                }
+                
+                makeNoise(); */
+
+        /* let square = function(x) {
+            return x * x;
+        }
+
+        console.log(square(4)); */
+    </script>
+</body>
+
+</html>
